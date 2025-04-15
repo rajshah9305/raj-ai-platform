@@ -1,0 +1,21 @@
+{
+  "name": "raj-ai-platform",
+  "version": "1.0.0",
+  "description": "An AI platform for building and deploying machine learning models.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajshah9305/raj-ai-platform.git"
+  },
+  "keywords": [],
+  "author": "RAJ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajshah9305/raj-ai-platform/issues"
+  },
+  "homepage": "https://github.com/rajshah9305/raj-ai-platform#readme"
+}
