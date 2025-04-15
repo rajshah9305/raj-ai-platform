@@ -1,0 +1,40 @@
+paths:
+  /api/external/weather:
+    get:
+      summary: Fetch weather data for a specific city
+      parameters:
+        - name: city
+          in: query
+          required: true
+          schema:
+            type: string
+            example: "New York"
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: "New York"
+                  main:
+                    type: object
+                    properties:
+                      temp:
+                        type: number
+                        example: 23.5
+                  weather:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        description:
+                          type: string
+                          example: "clear sky"
+        400:
+          description: Invalid input
+        500:
+          description: Internal server error
